@@ -1,2 +1,7 @@
 # Predicting-Heart-Disease-with-Machine-Learning
 This project uses machine learning to predict heart disease based on medical attributes like blood pressure, cholesterol, and age. After data cleaning and feature selection, a classification model is trained to identify high-risk patients, supporting early diagnosis and better health outcomes.
+🔄 Process Followed in the Project
+
+We started by exploring the dataset to understand what each column meant and what the target variable was. After this, we cleaned the data because some values were unrealistic — for example, a blood pressure value of 0 is impossible, so those records were removed. For cholesterol, some values were also 0, so instead of removing them, we replaced them with the median cholesterol values of each group (people with and without heart disease). Next, we converted the categorical text features into numbers using one-hot encoding, because machine learning models work only with numeric data.
+
+Once the data was prepared, we created a correlation heatmap to see which features had strong relationships with heart disease. This helped us understand which factors might be more important. After that, we trained a Logistic Regression model because the task was to predict between two outcomes: heart disease or no heart disease. Finally, we checked how well the model performed and interpreted the results to understand what influences heart disease risk the most
